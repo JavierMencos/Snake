@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.ArrayList;
 
 /**
  * Write a description of class Cabeza here.
@@ -8,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Cabeza extends ParteSerpiente
 {
+    Mundo EsteJuego;
     
     public Cabeza(ParteSerpiente parteSiguiente) {
         super(parteSiguiente);
@@ -47,6 +49,8 @@ public class Cabeza extends ParteSerpiente
     public void comerItem() {
         Item item = (Item)getOneObjectAtOffset(0, 0, Item.class);
         getWorld().removeObject(item);
+        Greenfoot.playSound("comer.wav");
+        EsteJuego.score++;
     }
     
     /**

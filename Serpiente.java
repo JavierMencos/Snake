@@ -13,7 +13,7 @@ public class Serpiente extends Actor
     private Cola cola;
     private ArrayList<Cuerpo1> partesCuerpo;
     
-    public static final int LONGITUD_INICIAL_CUERPO =3;
+    public static final int LONGITUD_INICIAL_CUERPO =2;
     
     public Serpiente() {
         cola = new Cola();

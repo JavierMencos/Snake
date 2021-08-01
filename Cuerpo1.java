@@ -9,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Cuerpo1 extends ParteSerpiente
 {
     private String archivoImagen;
-    
     public Cuerpo1(int parte, ParteSerpiente parteSiguiente) {
         super(parteSiguiente);
         archivoImagen = "body_" + parte + ".png";
